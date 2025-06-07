@@ -1,4 +1,4 @@
-## Demonstration of type checking using mypy in python
+## Demonstration of constant checking using mypy in python
 
 #### When constant is not reassigned:- 
 ![alt text](image.png)

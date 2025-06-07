@@ -38,7 +38,6 @@ print("Type of item_price:", type(item_price).__name__)
 print("Type of is_order_confirmed:", type(is_order_confirmed).__name__)
 
 # Deriving variable value from other variables
-# Descriptive variable names improve code readability and maintainability
 total_order_value = item_quantity * item_price
 print("Total Order Value:", total_order_value)
 
