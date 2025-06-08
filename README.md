@@ -2,11 +2,11 @@
 
 ## 📝 **ToDo**
 
-### Python
+### [Python](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python)
 - [x] Variables  
 - [x] Constants  
 - [x] Data Types  
-- [ ] Type conversion  
+- [x] Type conversion  
 - [ ] Control Flow
 - [ ] Functions
 - [ ] Error Handling
