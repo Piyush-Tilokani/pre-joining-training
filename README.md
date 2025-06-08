@@ -5,7 +5,7 @@
 ### Python
 - [x] Variables  
 - [x] Constants  
-- [ ] Data Types  
+- [x] Data Types  
 - [ ] Type conversion  
 - [ ] Control Flow
 - [ ] Functions
