@@ -8,7 +8,7 @@
 - [x] Data Types  
 - [x] Type conversion  
 - [x] Control Flow
-- [ ] Functions
+- [x] Functions
 - [ ] Error Handling
 
 ### Core Java
