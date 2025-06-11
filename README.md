@@ -3,13 +3,13 @@
 ## 📝 **ToDo**
 
 ### [Python](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python)
-- [x] Variables  
-- [x] Constants  
-- [x] Data Types  
-- [x] Type conversion  
-- [x] Control Flow
-- [x] Functions
-- [ ] Error Handling
+- [x] [Variables](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python/variables)  
+- [x] [Constants](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python/constants)  
+- [x] [Data Types](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python/datatypes)  
+- [x] [Type conversion](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python/type_conversion)  
+- [x] [Control Flow](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python/control_flow)
+- [x] [Functions](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python/functions)
+- [x] [Error Handling](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python/error_handling)
 
 ### Core Java
 - [ ] Basics of Java  
