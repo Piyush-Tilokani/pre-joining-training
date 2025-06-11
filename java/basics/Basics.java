@@ -1,7 +1,7 @@
 // Class representing a bank account
 class BankAccount {
 
-    // State: instance variables
+    // Instance variables 
     private String accountHolderName;
     private String accountNumber;
     private double balance;
@@ -20,7 +20,7 @@ class BankAccount {
         this.balance = initialBalance;
     }
 
-    // Behavior: method to deposit money
+    // Method to deposit money
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -31,7 +31,7 @@ class BankAccount {
         }
     }
 
-    // Behavior: method to withdraw money
+    // Method to withdraw money
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
@@ -46,7 +46,7 @@ class BankAccount {
         }
     }
 
-    // Behavior: method to display account information
+    // Method to display account information
     public void displayAccountDetails() {
         System.out.println("Account Holder: " + accountHolderName);
         System.out.println("Account Number: " + accountNumber);
