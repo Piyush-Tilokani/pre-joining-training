@@ -32,10 +32,10 @@
 - [ ] Callable statement, Prepared Statement, stored procedure 
 - [ ] Concept of normalization
 
-### Client Side Programming
-- [ ] HTML  
-- [ ] CSS  
-- [ ] Java Script - For validation
+### [Client Side Programming](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/client_side_programming/src)
+- [ ] [HTML](https://github.com/Piyush-Tilokani/pre-joining-training/blob/main/client_side_programming/src/index.html)  
+- [ ] [CSS](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/client_side_programming/src/css)  
+- [ ] [Java Script - For validation](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/client_side_programming/src/js)
 
 ### Integrating client and server side
 - [ ] Servlets, JSP and mapping servlets (web.xml or annotation)  
