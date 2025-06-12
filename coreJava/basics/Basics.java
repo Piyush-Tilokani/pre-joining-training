@@ -4,7 +4,7 @@ class BankAccount {
     // Instance variables 
     private String accountHolderName;
     private String accountNumber;
-    private double balance;
+    private double balance; 
 
     // Constructor with name and account number only
     public BankAccount(String holderName, String accountNumber) {
