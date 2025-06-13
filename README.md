@@ -11,11 +11,11 @@
 - [x] [Functions](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python/functions)
 - [x] [Error Handling](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python/error_handling)
 
-### Core Java
-- [ ] Basics of Java  
-- [ ] Basic Datatypes, Variable types, Modifier types, Final keyword, Constructors
-- [ ] Loop control and decision making 
-- [ ] Strings, Arrays  
+### [Core Java](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava)
+- [x] [Basics of Java](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/basics)
+- [x] [Basic Datatypes, Variable types, Modifier types, Final keyword, Constructors](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/datatypeAndModifiers)
+- [x] [Loop control and decision making](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/loopAndDecisionMaking) 
+- [x] [Strings, Arrays](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/stringsAndArrays)  
 - [ ] Inheritance, Overriding, Polymorphism, Abstraction, Encapsulation, Interfaces, Packages  
 - [ ] Exception, Hierarchy of exception, Exception handling, Throw vs Throws
 - [ ] Collection: List, Set and Map. Collection operations on primitives and custom object
