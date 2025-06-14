@@ -16,7 +16,7 @@
 - [x] [Basic Datatypes, Variable types, Modifier types, Final keyword, Constructors](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/datatypeAndModifiers)
 - [x] [Loop control and decision making](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/loopAndDecisionMaking) 
 - [x] [Strings, Arrays](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/stringsAndArrays)  
-- [ ] Inheritance, Overriding, Polymorphism, Abstraction, Encapsulation, Interfaces, Packages  
+- [ ] [Inheritance, Overriding, Polymorphism, Abstraction, Encapsulation, Interfaces, Packages](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/pillarsOfOOPS)  
 - [ ] Exception, Hierarchy of exception, Exception handling, Throw vs Throws
 - [ ] Collection: List, Set and Map. Collection operations on primitives and custom object
 - [ ] Sort List of primitives and custom object created above. Hint: Comparable v/s Comparator Interface
