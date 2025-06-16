@@ -17,7 +17,7 @@
 - [x] [Loop control and decision making](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/loopAndDecisionMaking) 
 - [x] [Strings, Arrays](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/stringsAndArrays)  
 - [x] [Inheritance, Overriding, Polymorphism, Abstraction, Encapsulation, Interfaces, Packages](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/pillarsOfOOPS)  
-- [ ] Exception, Hierarchy of exception, Exception handling, Throw vs Throws
+- [x] [Exception, Hierarchy of exception, Exception handling, Throw vs Throws](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/exceptionHandling)
 - [ ] Collection: List, Set and Map. Collection operations on primitives and custom object
 - [ ] Sort List of primitives and custom object created above. Hint: Comparable v/s Comparator Interface
 - [ ] Multithreading, Thread pool executor, volatile keyword, thread-safe with respect to instance, local variable, Method synchronized and block synchronized
