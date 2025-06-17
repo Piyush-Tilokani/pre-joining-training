@@ -18,8 +18,8 @@
 - [x] [Strings, Arrays](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/stringsAndArrays)  
 - [x] [Inheritance, Overriding, Polymorphism, Abstraction, Encapsulation, Interfaces, Packages](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/pillarsOfOOPS)  
 - [x] [Exception, Hierarchy of exception, Exception handling, Throw vs Throws](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/exceptionHandling)
-- [ ] Collection: List, Set and Map. Collection operations on primitives and custom object
-- [ ] Sort List of primitives and custom object created above. Hint: Comparable v/s Comparator Interface
+- [x] [Collection: List, Set and Map. Collection operations on primitives and custom object](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/collections)
+- [x] [Sort List of primitives and custom object created above. Hint: Comparable v/s Comparator Interface](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/collections)
 - [ ] Multithreading, Thread pool executor, volatile keyword, thread-safe with respect to instance, local variable, Method synchronized and block synchronized
 - [ ] JSON 
 - [ ] XML
