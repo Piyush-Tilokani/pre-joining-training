@@ -20,8 +20,8 @@
 - [x] [Exception, Hierarchy of exception, Exception handling, Throw vs Throws](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/exceptionHandling)
 - [x] [Collection: List, Set and Map. Collection operations on primitives and custom object](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/collections)
 - [x] [Sort List of primitives and custom object created above. Hint: Comparable v/s Comparator Interface](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/collections)
-- [ ] Multithreading, Thread pool executor, volatile keyword, thread-safe with respect to instance, local variable, Method synchronized and block synchronized
-- [ ] JSON 
+- [x] [Multithreading, Thread pool executor, volatile keyword, thread-safe with respect to instance, local variable, Method synchronized and block synchronized](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/multithreading)
+- [x] [JSON](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/JSON) 
 - [ ] XML
 - [ ] JDBC
 - [ ] File read write
