@@ -1,120 +1,74 @@
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-// Shared class to demonstrate synchronization and volatile
-class Counter {
-    private int count = 0;
-    private final Object lock = new Object();
+class TicketCounter {
+    private int availableTickets = 5;  // Shared resource
 
-    // Method-level synchronization
-    public synchronized void increment() {
-        count++;
-    }
+    public volatile boolean bookingOpen = true;  // Shared flag with visibility guarantee
 
-    // Block-level synchronization
-    public void decrement() {
-        synchronized (lock) {
-            count--;
+    // Synchronized method (Method-level locking)
+    public synchronized boolean bookTickets(String name, int count) {
+        if (!bookingOpen) {
+            System.out.println(name + " - Booking closed.");
+            return false;
         }
-    }
 
-    public int getCount() {
-        return count;
+        if (count <= availableTickets) {
+            System.out.println(name + " booked " + count + " ticket(s).");
+            availableTickets -= count;
+
+            // Synchronized block to update status of available tickets
+            // This ensures that the print statement is thread-safe
+            synchronized (this) {
+                System.out.println("Tickets left: " + availableTickets);
+            }
+
+            if (availableTickets == 0) {
+                bookingOpen = false;
+            }
+
+            return true;
+        } else {
+            System.out.println(name + " tried booking " + count + " ticket(s), but only " + availableTickets + " left. Booking failed.");
+            return false;
+        }
     }
 }
 
-// Volatile example: Visibility of changes across threads
-class VolatileExample implements Runnable {
-    private volatile boolean running = true;
+class CustomerTask implements Runnable {
+    private final TicketCounter counter;
+    private final String customerName;
+    private final int ticketsToBook;
 
-    public void run() {
-        System.out.println("Volatile thread started");
-        while (running) {
-            // do nothing
-        }
-        System.out.println("Volatile thread stopped");
-    }
-
-    public void stop() {
-        running = false;
-    }
-}
-
-// Runnable task for thread pool
-class PrintTask implements Runnable {
-    private final int number;
-
-    public PrintTask(int number) {
-        this.number = number;
+    public CustomerTask(TicketCounter counter, String customerName, int ticketsToBook) {
+        this.counter = counter;
+        this.customerName = customerName;
+        this.ticketsToBook = ticketsToBook;
     }
 
     @Override
     public void run() {
-        System.out.println("Task #" + number + " executed by " + Thread.currentThread().getName());
-    }
-}
-
-// Demonstrate thread safety (local vs. instance variable)
-class ThreadSafeExample implements Runnable {
-    private int instanceCounter = 0;
-
-    @Override
-    public void run() {
-        // Local variable is thread-safe
-        int localCounter = 0;
-        for (int i = 0; i < 5; i++) {
-            localCounter++;        // thread-safe
-            instanceCounter++;     // NOT thread-safe
+        // Local variable (Thread-safe)
+        boolean success = counter.bookTickets(customerName, ticketsToBook);
+        if (!success) {
+            System.out.println(customerName + " could not complete the booking.");
         }
-        System.out.println(Thread.currentThread().getName() + " - Local: " + localCounter + ", Instance: " + instanceCounter);
     }
 }
 
 public class MultithreadingDemo {
-    public static void main(String[] args) throws InterruptedException {
-        System.out.println("=== Basic Thread Creation ===");
-        Thread t1 = new Thread(() -> System.out.println("Thread using lambda: " + Thread.currentThread().getName()));
-        t1.start(); // start the thread
-        t1.join(); // wait for the thread to finish
+    public static void main(String[] args) {
+        TicketCounter counter = new TicketCounter(); // Shared instance
 
-        System.out.println("\n=== Volatile Example ===");
-        VolatileExample ve = new VolatileExample();
-        Thread vt = new Thread(ve);
-        vt.start();
-        Thread.sleep(1000);  // simulate delay
-        ve.stop();
-        vt.join();
+        // Thread pool with 4 threads
+        ExecutorService executor = Executors.newFixedThreadPool(4);
 
-        System.out.println("\n=== Synchronized Counter Example ===");
-        Counter counter = new Counter();
-        Runnable task = () -> {
-            for (int i = 0; i < 1000; i++) counter.increment();
-            for (int i = 0; i < 500; i++) counter.decrement();
-        };
+        // Simulating customer requests
+        executor.execute(new CustomerTask(counter, "Piyush", 2));
+        executor.execute(new CustomerTask(counter, "Shashwat", 1));
+        executor.execute(new CustomerTask(counter, "Atharva", 2));
+        executor.execute(new CustomerTask(counter, "Ajinkya", 1)); 
 
-        Thread thread1 = new Thread(task);
-        Thread thread2 = new Thread(task);
-        thread1.start();
-        thread2.start();
-        thread1.join();
-        thread2.join();
-
-        System.out.println("Final Counter Value: " + counter.getCount());
-
-        System.out.println("\n=== Thread Pool Executor ===");
-        ExecutorService executor = Executors.newFixedThreadPool(3);
-        for (int i = 1; i <= 5; i++) {
-            executor.execute(new PrintTask(i));
-        }
-        executor.shutdown();
-
-        System.out.println("\n=== Thread Safety: Local vs Instance Variable ===");
-        ThreadSafeExample tse1 = new ThreadSafeExample();
-        ThreadSafeExample tse2 = new ThreadSafeExample();
-        Thread t3 = new Thread(tse1, "Thread-A");
-        Thread t4 = new Thread(tse2, "Thread-B");
-        t3.start();
-        t4.start();
-        t3.join();
-        t4.join();
+        executor.shutdown(); // Close the executor after use
     }
 }
