@@ -12,17 +12,17 @@
 - [x] [Error Handling](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/python/error_handling)
 
 ### [Core Java](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava)
-- [x] [Basics of Java](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/basics)
-- [x] [Basic Datatypes, Variable types, Modifier types, Final keyword, Constructors](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/datatypeAndModifiers)
-- [x] [Loop control and decision making](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/loopAndDecisionMaking) 
-- [x] [Strings, Arrays](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/stringsAndArrays)  
-- [x] [Inheritance, Overriding, Polymorphism, Abstraction, Encapsulation, Interfaces, Packages](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/pillarsOfOOPS)  
-- [x] [Exception, Hierarchy of exception, Exception handling, Throw vs Throws](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/exceptionHandling)
-- [x] [Collection: List, Set and Map. Collection operations on primitives and custom object](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/collections)
-- [x] [Sort List of primitives and custom object created above. Hint: Comparable v/s Comparator Interface](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/collections)
-- [x] [Multithreading, Thread pool executor, volatile keyword, thread-safe with respect to instance, local variable, Method synchronized and block synchronized](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/multithreading)
-- [x] [JSON](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/JSON) 
-- [ ] XML
+- [x] [Basics of Java](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/basics)
+- [x] [Basic Datatypes, Variable types, Modifier types, Final keyword, Constructors](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/datatypeAndModifiers)
+- [x] [Loop control and decision making](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/loopAndDecisionMaking) 
+- [x] [Strings, Arrays](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/stringsAndArrays)  
+- [x] [Inheritance, Overriding, Polymorphism, Abstraction, Encapsulation, Interfaces, Packages](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/pillarsOfOOPS)  
+- [x] [Exception, Hierarchy of exception, Exception handling, Throw vs Throws](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/exceptionHandling)
+- [x] [Collection: List, Set and Map. Collection operations on primitives and custom object](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/collections)
+- [x] [Sort List of primitives and custom object created above. Hint: Comparable v/s Comparator Interface](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/collections)
+- [x] [Multithreading, Thread pool executor, volatile keyword, thread-safe with respect to instance, local variable, Method synchronized and block synchronized](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/multithreading)
+- [x] [JSON](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/JSON) 
+- [x] [XML](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/XML)
 - [ ] JDBC
 - [ ] File read write
 
