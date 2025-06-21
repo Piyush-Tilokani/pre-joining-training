@@ -13,18 +13,18 @@
 
 ### [Core Java](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava)
 - [x] [Basics of Java](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/basics)
-- [x] [Basic Datatypes, Variable types, Modifier types, Final keyword, Constructors](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/datatypeAndModifiers)
-- [x] [Loop control and decision making](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/loopAndDecisionMaking) 
-- [x] [Strings, Arrays](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/stringsAndArrays)  
+- [x] [Basic Datatypes, Variable types, Modifier types, Final keyword, Constructors](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/datatypeandmodifiers)
+- [x] [Loop control and decision making](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/loopanddecisionmaking) 
+- [x] [Strings, Arrays](hthttps://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/stringsandarrays)  
 - [x] [Inheritance, Overriding, Polymorphism, Abstraction, Encapsulation, Interfaces, Packages](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/pillarsOfOOPS)  
-- [x] [Exception, Hierarchy of exception, Exception handling, Throw vs Throws](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/exceptionHandling)
+- [x] [Exception, Hierarchy of exception, Exception handling, Throw vs Throws](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/exceptionhandling)
 - [x] [Collection: List, Set and Map. Collection operations on primitives and custom object](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/collections)
 - [x] [Sort List of primitives and custom object created above. Hint: Comparable v/s Comparator Interface](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/collections)
 - [x] [Multithreading, Thread pool executor, volatile keyword, thread-safe with respect to instance, local variable, Method synchronized and block synchronized](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/multithreading)
 - [x] [JSON](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/JSON) 
-- [x] [XML](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/XML)
-- [x] [JDBC]()
-- [x] File read write
+- [x] [XML](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/xml)
+- [x] [JDBC](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/jdbc)
+- [x] [File read write](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/fileReadWrite)
 
 ### DBMS
 - [ ] Need for database
