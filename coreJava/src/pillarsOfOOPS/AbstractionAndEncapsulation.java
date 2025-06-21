@@ -1,4 +1,4 @@
-package pillarsOfOOPS;
+package pillarsofOOPS;
 
 // Encapsulation: private fields and public methods
 class Student {

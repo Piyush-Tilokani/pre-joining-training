@@ -1,4 +1,4 @@
-package exceptionHandling;
+package exceptionhandling;
 
 import java.io.*;
 import java.util.Scanner;
@@ -8,7 +8,7 @@ public class ExceptionHandling {
 
     // Method to demonstrate checked exception with throws
     public static void readFile(String fileName) throws FileNotFoundException {
-        if (!fileName.equals("src/exceptionHandling/data.txt")) {
+        if (!fileName.equals("src/exceptionhandling/data.txt")) {
             throw new FileNotFoundException("File " + fileName + " not found!");
         }
         
@@ -61,7 +61,7 @@ public class ExceptionHandling {
         }
 
          try {
-            readFile("src/exceptionHandling/data.txt"); 
+            readFile("src/exceptionhandling/data.txt"); 
         } catch (FileNotFoundException e) {
             System.out.println("Caught a FileNotFoundException: " + e.getMessage());
         } finally {

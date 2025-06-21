@@ -1,4 +1,4 @@
-package pillarsOfOOPS;
+package pillarsofOOPS;
 
 //Inheritance in Java
 

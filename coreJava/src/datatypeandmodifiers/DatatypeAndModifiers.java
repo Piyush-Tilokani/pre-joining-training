@@ -1,4 +1,4 @@
-package datatypeAndModifiers;
+package datatypeandmodifiers;
 
 
 // Class representing a Grocery Item in a store

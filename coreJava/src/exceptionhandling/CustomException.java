@@ -1,4 +1,4 @@
-package exceptionHandling;
+package exceptionhandling;
 
 // Custom exception class for invalid marks
 class InvalidMarksException extends Exception {

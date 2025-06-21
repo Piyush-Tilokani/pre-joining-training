@@ -1,4 +1,4 @@
-package XML;
+package xml;
 
 import java.io.File;
 import javax.xml.parsers.DocumentBuilder;
@@ -47,7 +47,7 @@ public class XMLDemo {
             Transformer transformer = transformerFactory.newTransformer();
 
             DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File("src/XML/employee.xml"));
+            StreamResult result = new StreamResult(new File("src/xml/employee.xml"));
             transformer.transform(source, result);
 
             System.out.println("XML file created successfully: employee.xml");
@@ -62,7 +62,7 @@ public class XMLDemo {
 
         // 7. Read and parse the created XML file
         try {
-            File inputFile = new File("employee.xml");
+            File inputFile = new File("src/xml/employee.xml");
 
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();

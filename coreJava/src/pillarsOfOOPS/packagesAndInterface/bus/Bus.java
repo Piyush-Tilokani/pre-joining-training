@@ -1,6 +1,6 @@
-package pillarsOfOOPS.packagesAndInterface.bus;
+package pillarsofOOPS.packagesandinterface.bus;
 
-import pillarsOfOOPS.packagesAndInterface.interfaces.Transport;
+import pillarsofOOPS.packagesandinterface.interfaces.Transport;
 
 // Bus class implementing the Transport interface and providing its own implementation
 public class Bus implements Transport {

@@ -23,8 +23,8 @@
 - [x] [Multithreading, Thread pool executor, volatile keyword, thread-safe with respect to instance, local variable, Method synchronized and block synchronized](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/multithreading)
 - [x] [JSON](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/JSON) 
 - [x] [XML](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/coreJava/src/XML)
-- [ ] JDBC
-- [ ] File read write
+- [x] [JDBC]()
+- [x] File read write
 
 ### DBMS
 - [ ] Need for database

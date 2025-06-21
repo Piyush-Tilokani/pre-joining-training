@@ -1,4 +1,4 @@
-package pillarsOfOOPS;
+package pillarsofOOPS;
 
 // Base class
 class Payment {

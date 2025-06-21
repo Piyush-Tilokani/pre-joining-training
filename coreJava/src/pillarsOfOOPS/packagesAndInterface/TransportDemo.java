@@ -1,9 +1,9 @@
-package pillarsOfOOPS.packagesAndInterface;
+package pillarsofOOPS.packagesandinterface;
 
-import pillarsOfOOPS.packagesAndInterface.bike.Bike;
-import pillarsOfOOPS.packagesAndInterface.bus.Bus;
-import pillarsOfOOPS.packagesAndInterface.car.Car;
-import pillarsOfOOPS.packagesAndInterface.interfaces.Transport;
+import pillarsofOOPS.packagesandinterface.bike.Bike;
+import pillarsofOOPS.packagesandinterface.bus.Bus;
+import pillarsofOOPS.packagesandinterface.car.Car;
+import pillarsofOOPS.packagesandinterface.interfaces.Transport;
 
 public class TransportDemo {
     public static void main(String[] args) {

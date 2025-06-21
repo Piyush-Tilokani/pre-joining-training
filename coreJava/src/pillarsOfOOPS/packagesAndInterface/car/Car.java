@@ -1,6 +1,6 @@
-package pillarsOfOOPS.packagesAndInterface.car;
+package pillarsofOOPS.packagesandinterface.car;
 
-import pillarsOfOOPS.packagesAndInterface.interfaces.Transport;
+import pillarsofOOPS.packagesandinterface.interfaces.Transport;
 
 // Car class implementing the Transport interface and providing its own implementation
 public class Car implements Transport {

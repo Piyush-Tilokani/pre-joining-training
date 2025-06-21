@@ -1,4 +1,4 @@
-package fileReadWrite;
+package filereadwrite;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -12,7 +12,7 @@ public class FileReadWrite {
     public static void main(String[] args) {
 
         // 1. TEXT FILE (Write and Read)
-        String textFile = "src/fileReadWrite/sample.txt"; 
+        String textFile = "src/filereadwrite/sample.txt"; 
         // Writing a new text file
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(textFile))) {
             writer.write("Java File I/O");
@@ -32,7 +32,7 @@ public class FileReadWrite {
         }
 
         // 2. CSV FILE
-        String csvFile = "src/fileReadWrite/data.csv";
+        String csvFile = "src/filereadwrite/data.csv";
         // Writing a new CSV file
         try (PrintWriter pw = new PrintWriter(csvFile)) {
             pw.println("ID,Name");
@@ -51,7 +51,7 @@ public class FileReadWrite {
         }
 
         // 3. JSON FILE
-        String jsonFile = "src/fileReadWrite/employee.json";
+        String jsonFile = "src/filereadwrite/employee.json";
         JSONObject employee = new JSONObject();
         employee.put("id", 101);
         employee.put("name", "Piyush");
@@ -77,18 +77,18 @@ public class FileReadWrite {
 
 
         // 4. DIRECTORY OPERATIONS
-        File dir = new File("src/fileReadWrite/outputFolder");
+        File dir = new File("src/filereadwrite/outputfolder");
         if (!dir.exists()) {
             if (dir.mkdir()) {
                 System.out.println("\nDirectory created: " + dir.getName());
             }
         }
 
-        // 5. Copy files to outputFolder
+        // 5. Copy files to outputfolder
         try {
-            Files.copy(Paths.get(textFile), Paths.get("src/fileReadWrite/outputFolder/sample.txt"), StandardCopyOption.REPLACE_EXISTING);
-            Files.copy(Paths.get(csvFile), Paths.get("src/fileReadWrite/outputFolder/data.csv"), StandardCopyOption.REPLACE_EXISTING);
-            Files.copy(Paths.get(jsonFile), Paths.get("src/fileReadWrite/outputFolder/employee.json"), StandardCopyOption.REPLACE_EXISTING);
+            Files.copy(Paths.get(textFile), Paths.get("src/filereadwrite/outputfolder/sample.txt"), StandardCopyOption.REPLACE_EXISTING);
+            Files.copy(Paths.get(csvFile), Paths.get("src/filereadwrite/outputfolder/data.csv"), StandardCopyOption.REPLACE_EXISTING);
+            Files.copy(Paths.get(jsonFile), Paths.get("src/filereadwrite/outputfolder/employee.json"), StandardCopyOption.REPLACE_EXISTING);
             System.out.println("\nFiles copied to outputFolder.");
         } catch (IOException e) {
             System.out.println("Error copying files: " + e.getMessage());

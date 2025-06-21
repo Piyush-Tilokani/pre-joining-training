@@ -1,4 +1,4 @@
-package loopAndDecisionMaking;
+package loopanddecisionmaking;
 
 public class LoopAndDecision{
     public static void main(String[] args) {

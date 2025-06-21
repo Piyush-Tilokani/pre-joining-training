@@ -1,4 +1,4 @@
-package pillarsOfOOPS.packagesAndInterface.interfaces;
+package pillarsofOOPS.packagesandinterface.interfaces;
 
 // Interface for Transport
 public interface Transport {
