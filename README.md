@@ -33,9 +33,9 @@
 - [ ] Concept of normalization
 
 ### [Client Side Programming](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/client_side_programming/src)
-- [ ] [HTML](https://github.com/Piyush-Tilokani/pre-joining-training/blob/main/client_side_programming/src/index.html)  
-- [ ] [CSS](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/client_side_programming/src/css)  
-- [ ] [Java Script - For validation](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/client_side_programming/src/js)
+- [x] [HTML](https://github.com/Piyush-Tilokani/pre-joining-training/blob/main/client_side_programming/src/index.html)  
+- [x] [CSS](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/client_side_programming/src/css)  
+- [x] [Java Script - For validation](https://github.com/Piyush-Tilokani/pre-joining-training/tree/main/client_side_programming/src/js)
 
 ### Integrating client and server side
 - [ ] Servlets, JSP and mapping servlets (web.xml or annotation)  

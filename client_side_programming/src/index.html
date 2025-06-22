@@ -1,105 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>User Registration Form</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration Form</title>
 
-  <!-- Bootstrap CSS CDN -->
-  <link 
-    rel="stylesheet" 
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-  />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-  <div class="container">
-    <div class="form-container col-md-6 col-md-offset-3">
-      <h2 class="text-center">User Registration</h2>
+  <body>
+    <div class="container">
+      <div class="form-container col-md-6 col-md-offset-3">
+        <h2 class="text-center">Signup form</h2>
 
-      <!-- Registration Form -->
-      <form id="registrationForm">
-        <!-- Full Name (text input with minimum length) -->
-        <div class="form-group">
-          <label for="name">Full Name <span class="text-danger">*</span></label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            class="form-control"
-            placeholder="Enter your full name"
-            required
-            minlength="3"
-          />
-        </div>
+        <!-- Registration Form -->
+        <form id="registrationForm">
+          <!-- Full Name (text input with minimum length) -->
+          <div class="form-group">
+            <label for="name"
+              >Full Name <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Enter your full name"
+              required
+              minlength="3"
+            />
+          </div>
 
-        <!-- Email Address (email input for validation) -->
-        <div class="form-group">
-          <label for="email">Email <span class="text-danger">*</span></label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form-control"
-            placeholder="example@domain.com"
-            required
-          />
-        </div>
+          <!-- Email Address (email input for validation) -->
+          <div class="form-group">
+            <label for="email">Email <span class="text-danger">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="example@domain.com"
+              required
+            />
+          </div>
 
-        <!-- Date of Birth -->
-        <div class="form-group">
-          <label for="dob">Date of Birth</label>
-          <input
-            type="date"
-            id="dob"
-            name="dob"
-            class="form-control"
-          />
-        </div>
+          <!-- Date of Birth -->
+          <div class="form-group">
+            <label for="dob">Date of Birth <span class="text-danger">*</span></label>
+            <input type="date" id="dob" name="dob" class="form-control" required />
+          </div>
 
-        <!-- Password (with minimum length requirement) -->
-        <div class="form-group">
-          <label for="password">Password <span class="text-danger">*</span></label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            class="form-control"
-            required
-            minlength="6"
-          />
-        </div>
+          <!-- Age is derived from the dob field -->
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              class="form-control"
+              readonly
+              title="User must be at least 18 years old"
+              data-toggle="tooltip"
+            />
+          </div>
 
-        <!-- Gender Radio Buttons -->
-        <div class="form-group">
-          <label>Gender:</label><br />
-          <label class="radio-inline">
-            <input type="radio" name="gender" value="Male" checked /> Male
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="gender" value="Female" /> Female
-          </label>
-        </div>
+          <!-- Password (with minimum length requirement) -->
+          <div class="form-group">
+            <label for="password"
+              >Password <span class="text-danger">*</span></label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              required
+              minlength="6"
+            />
+          </div>
 
-        <!-- Subscribe Checkbox -->
-        <div class="form-group">
-          <label>
-            <input type="checkbox" id="subscribe" name="subscribe" /> Subscribe to newsletter
-          </label>
-        </div>
+          <div id="passwordRules" style="font-size: 0.9em; margin-top: 10px">
+            <p id="ruleLength" class="text-danger">✗ 8-16 characters</p>
+            <p id="ruleUpper" class="text-danger"> ✗ At least one uppercase letter</p>
+            <p id="ruleLower" class="text-danger"> ✗ At least one lowercase letter</p>
+            <p id="ruleNumber" class="text-danger">✗ At least one number</p>
+            <p id="ruleSpecial" class="text-danger">✗ At least one special </p>
+          </div>
 
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary btn-block">
-          Register
-        </button>
-      </form>
+          <!-- Gender Radio Buttons -->
+          <div class="form-group">
+            <label>Gender:</label><br />
+            <label class="radio-inline">
+              <input type="radio" name="gender" value="Male" checked /> Male
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="gender" value="Female" /> Female
+            </label>
+          </div>
+
+          <!-- Subscribe Checkbox -->
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="subscribe" name="subscribe" />
+              Subscribe to newsletter
+            </label>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="btn btn-primary btn-block"
+            id="submitBtn"
+            disabled
+          >
+            Register
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
 
-  <!-- JavaScript -->
-  <script src="js/script.js"></script>
-</body>
-</html> 
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
