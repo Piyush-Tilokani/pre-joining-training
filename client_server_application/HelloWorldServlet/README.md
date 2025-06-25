@@ -91,7 +91,7 @@ Hello from Servlet!
 | Tool          | Version        |
 |---------------|----------------|
 | Java          | 18.0.2.1       |
-| Eclipse IDE   | 2024-06 (4.33) |
+| Eclipse IDE   | 4.35.0 |
 | Apache Tomcat | 9.0.106          |
 | Servlet API   | javax.servlet-api-3.0.1.jar           |
 
