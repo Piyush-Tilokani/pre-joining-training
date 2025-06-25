@@ -133,8 +133,8 @@ CREATE TABLE users (
 | Tool/Technology | Version          |
 | --------------- | ---------------- |
 | Java            | 18.0.2.1         |
-| Eclipse IDE     | 2023-06 (4.33.0) |
-| Apache Tomcat   | 9.0.x            |
+| Eclipse IDE     |  4.35.0 |
+| Apache Tomcat   | 9.0.106            |
 | MySQL           | 8.0.42           |
 | mysql-connector | 9.3.0            |
 
