@@ -7,7 +7,7 @@ This module contains Java programs covering the foundational to advanced topics 
 | Tool/Technology     | Version     |
 |---------------------|-------------|
 | Java                | 18.0.2.1    |
-| Eclipse             | 4.33        |
+| Eclipse             | 4.35.0        |
 | MySQL               | 8.0.42      |
 
 ## Setup Instructions
