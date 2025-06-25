@@ -17,12 +17,12 @@ To run these Python files locally:
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Piyush-Tilokani/pre-joining-training.git
    ```
 
 2. Navigate to the python directory:
    ```bash
-   cd <repo-name>/python
+   cd pre-joining-training/python
    ```
 
 3. Open the folder in VS Code:
